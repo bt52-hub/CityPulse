@@ -23,3 +23,5 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 > finalisation de la page d'accueil
 
 > création du fichier css
+- header avec logos et nav
+- mise en forme de l'article en Une

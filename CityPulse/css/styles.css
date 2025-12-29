@@ -3,9 +3,11 @@
    ========================================= */
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
-    
+    font-size: 62.5%;
+    /* 1rem = 10px */
+
 }
+
 /* * {
     outline: 1px solid red;
 } */
@@ -81,7 +83,7 @@ a {
 }
 
 .logo-text {
-    font-weight:bold;
+    font-weight: bold;
     font-size: 1.6rem;
 
 }
@@ -97,8 +99,7 @@ a {
     /* menu mobile simplifié */
 }
 
-.logos,
-.nav-actions {
+.logos,.nav-actions {
     min-width: 0;
 }
 
@@ -127,4 +128,67 @@ a {
 .nav-proposer {
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+/* ARTICLE EN UNE */
+
+.featured-article {
+    margin-top: 1.6rem;
+}
+
+.featured-article article {
+    background-color: var(--color-background);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.featured-article .category {
+    display: inline-block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    background-color: rgba(28, 111, 239, 0.1);
+    border-radius: 32px;
+}
+
+.featured-article h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.featured-article .article-infos {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: 1.6rem;
+}
+
+.article-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.article-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.article-actions a:first-child {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.article-actions a:last-child {
+    background-color: #f2f2f2;
+    color: var(--color-text);
 }
