@@ -13,7 +13,10 @@
     <!-- HEADER -->
     <header class="site-header">
         <nav class="main-nav" aria-label="Navigation principale">
-            <a href="index.html" class="logo">CityPulse</a>
+            <div class="logos">
+                <img src="./images/logo.svg" alt="" class="logo-icon">
+                <a href="index.html" class="logo-text">CityPulse</a>
+            </div>
 
             <ul class="nav-list">
                 <li><a href="index.html">Accueil</a></li>
@@ -22,7 +25,10 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <a href="contact.html" class="nav-proposer">Proposer</a>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Proposer</a>
+                <a href="#" class="btn btn-secondary">Menu</a>
+            </div>
         </nav>
     </header>
 
@@ -33,7 +39,8 @@
         <section class="featured-article">
             <article>
                 <div class="article-image">
-                    <img src="./images/reunion-budget-participatif-et-projets.jpg" alt="Réunion sur les projets du budget participatif">
+                    <img src="./images/reunion-budget-participatif-et-projets.jpg"
+                        alt="Réunion sur les projets du budget participatif">
                 </div>
 
                 <p class="category">Vie locale</p>
@@ -52,12 +59,101 @@
                     <a href="articles.html">Voir tous les articles</a>
                 </div>
             </article>
-
-
         </section>
-        <article>
 
-        </article>
+        <!-- Articles à la Une -->
+        <section class="top-news">
+            <h2>À la une</h2>
+
+            <article>
+                <div class="article-image">
+                    <img src="./images/votre-galerie-de-commercants-en-fete.jpg"
+                        alt="Vitrine de commerces décorée pour les fêtes">
+                </div>
+
+                <p class="category">Économie</p>
+
+                <h3>
+                    Commerces : les horaires spéciaux des fêtes
+                </h3>
+
+                <p class="article-infos">
+                    23 décembre 2025 · 3 min
+                </p>
+            </article>
+
+            <article>
+                <div class="article-image">
+                    <img src="./images/exposition-oeuvres-locales.jpg" alt="Exposition d’œuvres d’art locales">
+                </div>
+
+                <p class="category">Culture</p>
+
+                <h3>
+                    Exposition : une sélection d’œuvres locales à découvrir
+                </h3>
+
+                <p class="article-infos">
+                    22 décembre 2025 · 4 min
+                </p>
+            </article>
+        </section>
+
+        <!-- Dernières infos -->
+        <section class="latest-news">
+            <h2>Dernières infos</h2>
+
+            <ul>
+                <li>
+                    Collecte des déchets : modification exceptionnelle des tournées
+                </li>
+                <li>
+                    Écoles : informations pratiques pour la reprise de janvier
+                </li>
+                <li>
+                    Solidarité : points de collecte ouverts pendant les fêtes
+                </li>
+            </ul>
+        </section>
+
+        <!-- INFO DU JOUR -->
+        <section class="daily-info">
+            <h2>Info du jour</h2>
+
+            <p>
+                Une permanence citoyenne exceptionnelle sera organisée
+                vendredi matin à l’hôtel de ville.
+            </p>
+        </section>
+
+        <!-- Météo et circulation -->
+        <section class="weather-traffic">
+            <h2>Météo & circulation</h2>
+
+            <p>
+                Météo : ciel couvert, éclaircies possibles dans l’après-midi.
+            </p>
+
+            <p>
+                Circulation : trafic dense autour du centre-ville entre 16h et 19h.
+            </p>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h2>Recevoir la newsletter</h2>
+
+            <p>
+                Chaque semaine, l’essentiel de l’actualité locale,
+                l’agenda et les initiatives citoyennes.
+            </p>
+
+            <a href="contact.html">Je m’inscris</a>
+        </section>
+
+
+
+
     </main>
 
 
