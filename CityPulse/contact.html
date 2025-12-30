@@ -32,39 +32,54 @@
         </nav>
     </header>
 
-    <!-- MAIN - Partie à spécifier pour chaque page -->
+       <!-- MAIN - Partie à spécifier pour chaque page -->
     <main id="main-content">
 
-        <!-- Une mise en avant -->
-        <section class="featured-article">
-            <article>
-                <div class="article-image">
-                    <img src="./images/reunion-budget-participatif-et-projets.jpg"
-                        alt="Réunion sur les projets du budget participatif">
+        <section class="agenda">
+            <h1>Articles</h1>
+            <p class="agenda-intro">
+                Retrouvez les dernières infos, classées par thématique. Les filtres sont présentés à titre visuel (TP
+                sans JavaScript).
+            </p>
+        </section>
+        <section class="agenda-filter">
+            <form>
+                <!-- Recherche -->
+
+                <div class="filter-group">
+                    <label for="recherche">Rechercher</label>
+                    <input class="search-input" type="text" id="recherche" name="recherche"
+                        placeholder="Ex. mobilité, culture, écoles...">
                 </div>
-                <div class="article-content">
-                    <p class="category">Vie locale</p>
 
-                    <h1>
-                        Budget participatif : 5 projets concrets retenus
-                        pour améliorer le quotidien
-                    </h1>
+                <p class="filter-note">La recherche n'est pas fonctionnelle (présentation uniquement).</p>
 
-                    <p class="article-infos">
-                        24 décembre 2025 · Par la rédaction CityPulse
-                    </p>
-                    <p class="article-teasing">Mobilité douce, patrimoine, sport, enfance... Les habitants ont voté :
-                        découvrez les idées qui seront financées en 2026 et le calendrier des réalisations</p>
+                <!-- Menu Trier -->
 
-                    <div class="article-actions">
-                        <a href="article.html">Lire l’article</a>
-                        <a href="articles.html">Voir tous les articles</a>
+                <div class="filter-group">
+                    <label for="trier">Trier</label>
+                    <select id="trier" name="trier">
+                        <option value="recents">Les plus récents</option>
+                        <option value="anciens">Les plus anciens</option>
+                        <option value="populaires">Les plus populaires</option>
+                    </select>
+                </div>
+
+                <!-- Thématiques (badges) -->
+
+                <div class="filter-group">
+                    <label>Thématiques :</label>
+                    <div class="thematiques-badges">
+                        <button type="button" class="badge-theme">Vie locale</button>
+                        <button type="button" class="badge-theme">Culture</button>
+                        <button type="button" class="badge-theme">Économie</button>
+                        <button type="button" class="badge-theme">Éducation</button>
+                        <button type="button" class="badge-theme">Transports</button>
+                        <button type="button" class="badge-theme">Sport</button>
                     </div>
                 </div>
-            </article>
+            </form>
         </section>
-
-        <!-- Articles à la Une -->
         <section class="top-news">
             <h2>À la une</h2>
 
@@ -116,59 +131,23 @@
                     <h3>
                         Circulation : plan de stationnement et conseils pour éviter les bouchons
                     </h3>
-                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples pour se déplacer.</p>
+                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples
+                        pour se déplacer.</p>
                     <p class="article-infos">
                         21 décembre 2025 · 2 min
                     </p>
                 </div>
             </article>
-
         </section>
-
-        <!-- Dernières infos -->
-        <section class="latest-news">
-            <h2>Dernières infos</h2>
-
-            <div class="news-card">
-                <p class="news-title">Collecte des déchets : modification exceptionnelle des tournées</p>
-                <p>24/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Écoles : informations pratiques pour la reprise de janvier</p>
-                <p>23/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Solidarité : points de collecte ouverts pendant les fêtes</p>
-                <p>22/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Sport : inscriptions ouvertes pour les ateliers de remise en forme</p>
-                <p>20/12</p>
-            </div>
-
-        </section>
-
-        <!-- Info du jour -->
-        <section class="daily-info">
-            <h2>Info du jour</h2>
-            <p><strong>Ouverture : </strong>permanence citoyenne exceptionnelle vendredi matin.</p>
-            <p class="daily-info-advice"> Conseil : privilégiez le contact via le formulaire si vous avez un document à
-                transmettre</p>
-            <a href="contact.html">Contacter la rédaction</a>
-        </section>
-
-        <!-- Météo et circulation -->
-        <section class="weather-traffic">
-            <h2>Météo & circulation</h2>
-            <p>
-                Météo : ciel couvert, éclaircies possibles dans l’après-midi.
-            </p>
-            <p>
-                Circulation : trafic dense autour du centre-ville entre 16h et 19h.
-            </p>
-        </section>
-
-        <!-- Newsletter -->
+        <div>
+            <nav class="pagination" aria-label="Navigation de l'agenda">
+                <a href="#" class="page-link">Préc.</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link ">2</a>
+                <a href="#" class="page-link ">3</a>
+                <a href="#" class="page-link">Suiv.</a>
+            </nav>
+        </div>
         <section class="newsletter">
             <h2>Recevoir la newsletter</h2>
             <p>
@@ -179,7 +158,6 @@
         </section>
 
     </main>
-
 
     <!-- FOOTER -->
     <footer class="site-footer">

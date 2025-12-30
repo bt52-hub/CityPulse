@@ -327,10 +327,23 @@ main section {
     margin-top: 1.2rem;
     padding: 1rem 1.6rem;
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-background);
     border-radius: 3rem;
     font-size: 1.4rem;
     border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#newsletter-article a {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 1rem 1.6rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    border: 1px solid;
     cursor: pointer;
     outline: none;
 }
@@ -449,7 +462,6 @@ main section {
     line-height: 2rem;
 }
 
-/* Style pour la pagination */
 .pagination {
     display: flex;
     justify-content: center;
@@ -469,14 +481,77 @@ main section {
     transition: all 0.2s;
 }
 
-/* État actif (la page actuelle "Semaine") */
 .page-link.active {
-    background-color: rgba(28, 111, 239, 0.1); /* Ton bleu très clair */
+    background-color: rgba(28, 111, 239, 0.1);
     color: var(--color-primary);
     border-color: var(--color-primary);
 }
 
-/* Effet au survol */
 .page-link:hover {
     background-color: #f2f2f2;
 }
+
+/* ARTICLES */
+
+.agenda-filter p {
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: var(--color-text);
+    border: 1px solid #dddddd;
+}
+
+.thematiques-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.badge-theme {
+    padding: 1rem 1.6rem;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    background-color: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    border-radius: 3rem;
+    cursor: pointer;
+    outline: none;
+}
+
+/* FIL D'ARIANE */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: var(--color-muted);
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb-separator {
+    color: var(--color-muted);
+    user-select: none;
+}
+
+.breadcrumb-current {
+    color: var(--color-text);
+}
+

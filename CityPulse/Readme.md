@@ -31,3 +31,4 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > Retouches, compléments et corrections du css sur la page d'accueil
+> création des pages "agenda", "articles" : html + css

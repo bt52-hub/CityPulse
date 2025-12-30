@@ -36,104 +36,126 @@
     <main id="main-content">
 
         <section class="agenda">
-            <h1>Agenda</h1>
+            <h1>Articles</h1>
             <p class="agenda-intro">
                 Retrouvez les dernières infos, classées par thématique. Les filtres sont présentés à titre visuel (TP
                 sans JavaScript).
             </p>
         </section>
-
         <section class="agenda-filter">
             <form>
+                <!-- Recherche -->
+
                 <div class="filter-group">
-                    <label for="periode">Période</label>
-                    <select id="periode" name="periode">
-                        <option value="semaine">Cette semaine</option>
-                        <option value="mois">Ce mois-ci</option>
-                        <option value="annee">Cette année</option>
+                    <label for="recherche">Rechercher</label>
+                    <input class="search-input" type="text" id="recherche" name="recherche"
+                        placeholder="Ex. mobilité, culture, écoles...">
+                </div>
+
+                <p class="filter-note">La recherche n'est pas fonctionnelle (présentation uniquement).</p>
+
+                <!-- Menu Trier -->
+
+                <div class="filter-group">
+                    <label for="trier">Trier</label>
+                    <select id="trier" name="trier">
+                        <option value="recents">Les plus récents</option>
+                        <option value="anciens">Les plus anciens</option>
+                        <option value="populaires">Les plus populaires</option>
                     </select>
                 </div>
 
-                <div class="filter-group">
-                    <label for="type">Type d’événement</label>
-                    <select id="type" name="type">
-                        <option value="tous">Tous</option>
-                        <option value="culture">Culture</option>
-                        <option value="sport">Sport</option>
-                        <option value="atelier">Atelier</option>
-                        <option value="concert">Concert</option>
-                    </select>
-                </div>
+                <!-- Thématiques (badges) -->
 
-                <p class="filter-note">Filtres non fonctionnels (présentation uniquement).</p>
+                <div class="filter-group">
+                    <label>Thématiques :</label>
+                    <div class="thematiques-badges">
+                        <button type="button" class="badge-theme">Vie locale</button>
+                        <button type="button" class="badge-theme">Culture</button>
+                        <button type="button" class="badge-theme">Économie</button>
+                        <button type="button" class="badge-theme">Éducation</button>
+                        <button type="button" class="badge-theme">Transports</button>
+                        <button type="button" class="badge-theme">Sport</button>
+                    </div>
+                </div>
             </form>
         </section>
+        <section class="top-news">
+            <h2>À la une</h2>
 
-        <div class="agenda-content">
-            <p class="category-agenda">Concert</p>
-            <h2>
-                Événement : Concert
-            </h2>
-            <p class="agenda-infos">
-                Sam. 27 déc. · 18h30 · Salle des fêtes
-            </p>
-            <p class="article-agenda">Soirée accoustique et chants de saison, entrée libre.</p>
+            <article>
+                <div class="article-image">
+                    <img src="./images/votre-galerie-de-commercants-en-fete.jpg"
+                        alt="Vitrine de commerces décorée pour les fêtes">
+                </div>
+                <div class="article-content">
+                    <p class="category">Économie</p>
+
+                    <h3>
+                        Commerces : les horaires spéciaux des fêtes
+                    </h3>
+                    <p class="top-news-teasing">Ouvertures, fermetures, permanences : un récapitulatif clair pour
+                        organiser vos courses.</p>
+                    <p class="article-infos">
+                        23 décembre 2025 · 3 min
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-image">
+                    <img src="./images/exposition-oeuvres-locales.jpg" alt="Exposition d’œuvres d’art locales">
+                </div>
+                <div class="article-content">
+                    <p class="category">Culture</p>
+
+                    <h3>
+                        Exposition : une sélection d’œuvres locales à découvrir
+                    </h3>
+                    <p class="top-news-teasing">Un prcours accessible et chaleureux, avec des temps de médiation et une
+                        visite courte.</p>
+                    <p class="article-infos">
+                        22 décembre 2025 · 4 min
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-image">
+                    <img src="./images/circulation-stationnement-et-bouchons.jpg"
+                        alt="Circulation dense et bouchons dans la ville">
+                </div>
+                <div class="article-content">
+                    <p class="category">Transport</p>
+
+                    <h3>
+                        Circulation : plan de stationnement et conseils pour éviter les bouchons
+                    </h3>
+                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples
+                        pour se déplacer.</p>
+                    <p class="article-infos">
+                        21 décembre 2025 · 2 min
+                    </p>
+                </div>
+            </article>
+        </section>
+        <div>
+            <nav class="pagination" aria-label="Navigation de l'agenda">
+                <a href="#" class="page-link">Préc.</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link ">2</a>
+                <a href="#" class="page-link ">3</a>
+                <a href="#" class="page-link">Suiv.</a>
+            </nav>
         </div>
-
-        <div class="agenda-content">
-            <p class="category-agenda">Marché</p>
-            <h2>
-                Événement : Marché
-            </h2>
-            <p class="agenda-infos">
-                Dim. 28 déc. · 10h00 · Place centrale
+        <section class="newsletter">
+            <h2>Recevoir la newsletter</h2>
+            <p>
+                Chaque semaine, l’essentiel de l’actualité locale,
+                l’agenda et les initiatives citoyennes.
             </p>
-            <p class="article-agenda">Producteurs, idées de paniers, dégustations locales.</p>
-        </div>
-
-        <div class="agenda-content">
-            <p class="category-agenda">Atelier</p>
-            <h2>
-                Événement : Atelier
-            </h2>
-            <p class="agenda-infos">
-                Lun. 29 déc. · 14h00 · Médiathèque
-            </p>
-            <p class="article-agenda">Initiation à la lecture à haute voix, tout public.</p>
-        </div>
-
-        <div class="agenda-content">
-            <p class="category-agenda">Sport</p>
-            <h2>
-                Événement : Sport
-            </h2>
-            <p class="agenda-infos">
-                Mar. 30 déc. · 09h30 · Gymnase
-            </p>
-            <p class="article-agenda">Initiation à la lecture à haute voix, tout public.</p>
-        </div>
-
-        <div class="agenda-content">
-            <h2>Conseil pratique</h2>
-            <p class="article-agenda">
-                Pensez à vérifier les horaires sur place en période de fêtes.
-                Certains lieux adaptent leur accueil.
-            </p>
-        </div>
-
-        <div class="agenda-content">
-            <h2>Proposer un événement</h2>
-            <p class="article-agenda">
-                Association, commerçant, initiative locale : envoyez les informations à la rédaction.
-            </p>
-            <a href="contact.html" class="btn btn-primary">Proposer un événement</a>
-        </div>
-
-        <nav class="pagination" aria-label="Navigation de l'agenda">
-            <a href="#" class="page-link">Préc.</a>
-            <a href="#" class="page-link active">Semaine</a>
-            <a href="#" class="page-link">Suiv.</a>
-        </nav>
+            <a href="contact.html">Je m’inscris</a>
+        </section>
 
     </main>
 

@@ -35,6 +35,16 @@
     <!-- MAIN - Partie à spécifier pour chaque page -->
     <main id="main-content">
 
+        <div>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb-separator">›</span>
+                <a href="articles.html">Articles</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">Budget participatif</span>
+            </nav>
+        </div>
+
         <!-- Une mise en avant -->
         <section class="featured-article">
             <article>
@@ -116,7 +126,8 @@
                     <h3>
                         Circulation : plan de stationnement et conseils pour éviter les bouchons
                     </h3>
-                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples pour se déplacer.</p>
+                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples
+                        pour se déplacer.</p>
                     <p class="article-infos">
                         21 décembre 2025 · 2 min
                     </p>
@@ -125,51 +136,28 @@
 
         </section>
 
-        <!-- Dernières infos -->
-        <section class="latest-news">
-            <h2>Dernières infos</h2>
-
-            <div class="news-card">
-                <p class="news-title">Collecte des déchets : modification exceptionnelle des tournées</p>
-                <p>24/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Écoles : informations pratiques pour la reprise de janvier</p>
-                <p>23/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Solidarité : points de collecte ouverts pendant les fêtes</p>
-                <p>22/12</p>
-            </div>
-            <div class="news-card">
-                <p class="news-title">Sport : inscriptions ouvertes pour les ateliers de remise en forme</p>
-                <p>20/12</p>
-            </div>
-
-        </section>
-
-        <!-- Info du jour -->
-        <section class="daily-info">
-            <h2>Info du jour</h2>
-            <p><strong>Ouverture : </strong>permanence citoyenne exceptionnelle vendredi matin.</p>
-            <p class="daily-info-advice"> Conseil : privilégiez le contact via le formulaire si vous avez un document à
-                transmettre</p>
-            <a href="contact.html">Contacter la rédaction</a>
-        </section>
-
-        <!-- Météo et circulation -->
+        <!-- Résumé -->
         <section class="weather-traffic">
-            <h2>Météo & circulation</h2>
+            <h2>Résumé</h2>
             <p>
-                Météo : ciel couvert, éclaircies possibles dans l’après-midi.
+                5 projets retenus, mise en œuvre par lots en 2026, priorité à l'utilité et à l'accessibilité.
+            </p>
+        </section>
+
+        <!-- Auteur -->
+        <section class="newsletter">
+            <h2>Auteur</h2>
+            <p>
+                <strong>Rédaction CityPulse </strong>
             </p>
             <p>
-                Circulation : trafic dense autour du centre-ville entre 16h et 19h.
+                Collectif éditorial. Pour proposer un sujet : formulaire de contact.
             </p>
+            <a href="contact.html">Proposer une info</a>
         </section>
 
         <!-- Newsletter -->
-        <section class="newsletter">
+        <section class="newsletter" id="newsletter-article">
             <h2>Recevoir la newsletter</h2>
             <p>
                 Chaque semaine, l’essentiel de l’actualité locale,
