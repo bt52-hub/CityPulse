@@ -179,7 +179,7 @@ a {
     min-width: 140px;
 }
 
-.article-actions a {
+.article-actions button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -189,12 +189,12 @@ a {
     margin-bottom: 2rem;
 }
 
-.article-actions a:first-child {
+.article-actions button:first-child {
     background-color: var(--color-primary);
     color: #ffffff;
 }
 
-.article-actions a:last-child {
+.article-actions button:last-child {
     background-color: #f2f2f2;
     color: var(--color-text);
 }
@@ -227,6 +227,18 @@ main section {
     border-radius: 3rem;
 }
 
+.top-news-teasing {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    padding-bottom: 1rem;
+}
+
+.article-content h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+
 /* DERNIÈRES INFOS */
 
 .latest-news h2 {
@@ -257,15 +269,43 @@ main section {
     font-size: 1.2rem;
 }
 
+/* INFO DU JOUR */
+
+.daily-info {
+    padding: 1.6rem;
+    border-radius: 16px;
+    text-align: start;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--color-muted);
+
+    .daily-info-advice {
+        font-size: 1rem;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 1.2rem;
+        padding: 1rem 1.6rem;
+        background-color: var(--color-background);
+        color: var(--color-text) border-radius: 3rem;
+        font-size: 1.4rem;
+    }
+}
+
 /* NEWSLETTER */
 
 .newsletter {
     padding: 1.6rem;
     border-radius: 16px;
-    text-align: center;
+    text-align: start;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
 }
 
-.newsletter a {
+.newsletter button {
     display: inline-block;
     margin-top: 1.2rem;
     padding: 1rem 1.6rem;
@@ -273,4 +313,28 @@ main section {
     color: #fff;
     border-radius: 3rem;
     font-size: 1.4rem;
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding: 2.4rem 1.6rem;
+    background-color: var(--color-background);
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-section {
+    margin-bottom: 2.4rem;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.site-footer p,
+.site-footer a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--color-muted);
 }
