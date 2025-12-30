@@ -25,3 +25,9 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 > création du fichier css
 - header avec logos et nav
 - mise en forme de l'article en Une
+
+
+\\\ 30.12.2025 - AM + P.M ///
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+> Retouches, compléments et corrections du css sur la page d'accueil
