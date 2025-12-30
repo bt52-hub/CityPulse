@@ -2,19 +2,15 @@
    CONFIGURATION ROOT
    ========================================= */
 
-html {
-    font-size: 62.5%;
-    /* 1rem = 10px */
-
-}
-
 /* * {
     outline: 1px solid red;
 } */
 
 :root {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    background-color: #ededed;
     --color-background: #ffffff;
-    --color-surface: #f5f5f5;
     --color-text: #070E18;
     --color-muted: #6b6b6b;
 
@@ -22,9 +18,8 @@ html {
     --color-secondary: #135dcc;
 }
 
-/* =========================================
-   RESET ET BASE
-   ========================================= */
+
+/* RESET ET BASE */
 
 * {
     box-sizing: border-box;
@@ -32,11 +27,12 @@ html {
     padding: 0;
 }
 
-
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
+}
+
+main {
+    padding: 1.6rem;
 }
 
 img {
@@ -44,20 +40,19 @@ img {
     display: block;
 }
 
-/* ul {
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
-} */
+}
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* =========================
-   HEADER
-========================= */
+
+/* HEADER */
 
 .site-header {
     padding: 1.2rem 1.6rem;
@@ -99,7 +94,8 @@ a {
     /* menu mobile simplifié */
 }
 
-.logos,.nav-actions {
+.logos,
+.nav-actions {
     min-width: 0;
 }
 
@@ -130,57 +126,67 @@ a {
     font-weight: 600;
 }
 
-/* ARTICLE EN UNE */
+/* ARTICLE MIS EN AVANT */
+
+.article-content {
+    padding: 1.6rem;
+}
 
 .featured-article {
-    margin-top: 1.6rem;
+    margin-top: 1.5rem;
 }
 
 .featured-article article {
     background-color: var(--color-background);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .featured-article .category {
     display: inline-block;
-    margin-top: 1.2rem;
-    margin-bottom: 0.8rem;
     padding: 1rem;
     font-size: 1.2rem;
     color: var(--color-text);
     background-color: rgba(28, 111, 239, 0.1);
-    border-radius: 32px;
+    border-radius: 3rem;
 }
 
 .featured-article h1 {
     font-size: 2.2rem;
     line-height: 1.3;
-    margin-bottom: 1rem;
     color: var(--color-text);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .featured-article .article-infos {
     font-size: 1.2rem;
     color: var(--color-muted);
-    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.featured-article .article-teasing {
+    font-size: 1.4rem;
+    color: var(--color-muted);
+    padding-bottom: 1rem;
 }
 
 .article-actions {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    min-width: 140px;
 }
 
 .article-actions a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.6rem;
+    padding: 1rem;
     font-size: 1.4rem;
-    font-weight: 600;
-    border-radius: 999px;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
 }
 
 .article-actions a:first-child {
@@ -191,4 +197,80 @@ a {
 .article-actions a:last-child {
     background-color: #f2f2f2;
     color: var(--color-text);
+}
+
+main section {
+    margin-bottom: 2.5rem;
+}
+
+/* ARTICLES EN UNE */
+
+.top-news h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.top-news article {
+    background-color: var(--color-background);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.top-news .category {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    background-color: rgba(28, 111, 239, 0.1);
+    border-radius: 3rem;
+}
+
+/* DERNIÈRES INFOS */
+
+.latest-news h2 {
+    margin-bottom: 1.5rem;
+}
+
+.latest-news div {
+    margin-bottom: 0.8rem;
+}
+
+.news-card {
+    background-color: var(--color-background);
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    padding: 1.6rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.newsletter a {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 1rem 1.6rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 1.4rem;
 }
