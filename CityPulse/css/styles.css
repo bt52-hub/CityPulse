@@ -11,7 +11,7 @@
     /* 1rem = 10px */
     background-color: #ededed;
     --color-background: #ffffff;
-    --color-text: #070E18;
+    --color-text: #273440;
     --color-muted: #6b6b6b;
 
     --color-primary: #1C6FEF;
@@ -155,7 +155,6 @@ a {
 .featured-article h1 {
     font-size: 2.2rem;
     line-height: 1.3;
-    color: var(--color-text);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -290,6 +289,7 @@ main section {
     }
 
 }
+
 .daily-info a {
     display: inline-block;
     margin-top: 1.2rem;
@@ -300,10 +300,7 @@ main section {
     border: 1px solid #dddddd;
     font-size: 1.4rem;
     cursor: pointer;
-
 }
-
-
 
 /* MÉTÉO */
 
@@ -360,4 +357,126 @@ main section {
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--color-muted);
+}
+
+/* AGENDA */
+
+.agenda h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.agenda-filter {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-text);
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: var(--color-text);
+    appearance: none;
+    /* Supprime le style natif pour plus de contrôle */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+}
+
+.filter-note {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+.agenda-content {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.agenda-content h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.agenda-intro {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--color-text);
+}
+
+.category-agenda {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    background-color: rgba(28, 111, 239, 0.1);
+    border-radius: 3rem;
+    border: 1px solid var(--color-muted);
+}
+
+.agenda-infos {
+    font-size: 1.1rem;
+}
+
+.article-agenda {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* Style pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.page-link {
+    padding: 0.8rem 1.6rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-text);
+    transition: all 0.2s;
+}
+
+/* État actif (la page actuelle "Semaine") */
+.page-link.active {
+    background-color: rgba(28, 111, 239, 0.1); /* Ton bleu très clair */
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Effet au survol */
+.page-link:hover {
+    background-color: #f2f2f2;
 }
