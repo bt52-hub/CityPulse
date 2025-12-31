@@ -33,129 +33,109 @@
     </header>
 
        <!-- MAIN - Partie à spécifier pour chaque page -->
+    <!-- MAIN - Page Contact -->
     <main id="main-content">
 
-        <section class="agenda">
-            <h1>Articles</h1>
-            <p class="agenda-intro">
-                Retrouvez les dernières infos, classées par thématique. Les filtres sont présentés à titre visuel (TP
-                sans JavaScript).
+        <section class="contact-intro">
+            <h1>Proposer une info</h1>
+            <p>
+                Vous avez une information locale, un événement ou une correction à signaler ? 
+                Envoyez-nous un message. Les champs marqués "obligatoire" doivent être renseignés.
             </p>
         </section>
-        <section class="agenda-filter">
-            <form>
-                <!-- Recherche -->
 
-                <div class="filter-group">
-                    <label for="recherche">Rechercher</label>
-                    <input class="search-input" type="text" id="recherche" name="recherche"
-                        placeholder="Ex. mobilité, culture, écoles...">
+        <!-- Formulaire de contact -->
+        <section class="contact-form-section">
+            <form class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nom">Nom (facultatif)</label>
+                    <input 
+                        type="text" 
+                        id="nom" 
+                        name="nom"
+                        class="form-input"
+                    >
+                    <p class="form-help">Indiquez le nom que nous pouvons citer si vous le souhaitez.</p>
                 </div>
 
-                <p class="filter-note">La recherche n'est pas fonctionnelle (présentation uniquement).</p>
+                <div class="form-group">
+                    <label for="email">Email (obligatoire)</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        class="form-input"
+                        required
+                    >
+                    <p class="form-help">Nous l'utilisons uniquement pour vous répondre.</p>
+                </div>
 
-                <!-- Menu Trier -->
-
-                <div class="filter-group">
-                    <label for="trier">Trier</label>
-                    <select id="trier" name="trier">
-                        <option value="recents">Les plus récents</option>
-                        <option value="anciens">Les plus anciens</option>
-                        <option value="populaires">Les plus populaires</option>
+                <div class="form-group">
+                    <label for="type">Type de message (obligatoire)</label>
+                    <select id="type" name="type" class="form-select" required>
+                        <option value="">Choisir...</option>
+                        <option value="information">Vie locale</option>
+                        <option value="evenement">Événement</option>
+                        <option value="correction">Culture</option>
+                        <option value="correction">Sport</option>
+                        <option value="autre">Autre demande</option>
                     </select>
                 </div>
 
-                <!-- Thématiques (badges) -->
-
-                <div class="filter-group">
-                    <label>Thématiques :</label>
-                    <div class="thematiques-badges">
-                        <button type="button" class="badge-theme">Vie locale</button>
-                        <button type="button" class="badge-theme">Culture</button>
-                        <button type="button" class="badge-theme">Économie</button>
-                        <button type="button" class="badge-theme">Éducation</button>
-                        <button type="button" class="badge-theme">Transports</button>
-                        <button type="button" class="badge-theme">Sport</button>
-                    </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message (obligatoire)</label>
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        class="form-textarea"
+                        placeholder="Décrivez l'information : qui ? quoi ? où ? quand ? comment ?"
+                        required
+                    ></textarea>
+                    <p class="form-help">Plus c'est précis, plus c'est simple à vérifier et à publier.</p>
                 </div>
+
+                <!-- Données personnelles -->
+                <div class="form-group">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="consent" required>
+                        <span class="checkbox-label">
+                            J'accepte la collecte de mes données personnelles afin d'être recontacté 
+                            au sujet de ce message (obligatoire)
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Bouton envoyer -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-submit">Envoyer</button>
+                    <p class="form-note">Envoi non fonctionnel (TP sans back-end).</p>
+                </div>
+
             </form>
         </section>
-        <section class="top-news">
-            <h2>À la une</h2>
 
-            <article>
-                <div class="article-image">
-                    <img src="./images/votre-galerie-de-commercants-en-fete.jpg"
-                        alt="Vitrine de commerces décorée pour les fêtes">
-                </div>
-                <div class="article-content">
-                    <p class="category">Économie</p>
-
-                    <h3>
-                        Commerces : les horaires spéciaux des fêtes
-                    </h3>
-                    <p class="top-news-teasing">Ouvertures, fermetures, permanences : un récapitulatif clair pour
-                        organiser vos courses.</p>
-                    <p class="article-infos">
-                        23 décembre 2025 · 3 min
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="article-image">
-                    <img src="./images/exposition-oeuvres-locales.jpg" alt="Exposition d’œuvres d’art locales">
-                </div>
-                <div class="article-content">
-                    <p class="category">Culture</p>
-
-                    <h3>
-                        Exposition : une sélection d’œuvres locales à découvrir
-                    </h3>
-                    <p class="top-news-teasing">Un prcours accessible et chaleureux, avec des temps de médiation et une
-                        visite courte.</p>
-                    <p class="article-infos">
-                        22 décembre 2025 · 4 min
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="article-image">
-                    <img src="./images/circulation-stationnement-et-bouchons.jpg"
-                        alt="Circulation dense et bouchons dans la ville">
-                </div>
-                <div class="article-content">
-                    <p class="category">Transport</p>
-
-                    <h3>
-                        Circulation : plan de stationnement et conseils pour éviter les bouchons
-                    </h3>
-                    <p class="top-news-teasing">Les rues à privilégier, les zones à éviter, et des alternatives simples
-                        pour se déplacer.</p>
-                    <p class="article-infos">
-                        21 décembre 2025 · 2 min
-                    </p>
-                </div>
-            </article>
+        <!-- Informations complémentaires -->
+        <section class="contact-info">
+            <h2>Autres moyens de contact</h2>
+            <p>
+                <strong>Email :</strong> <a href="mailto:contact@citypulse.fr">contact@citypulse.fr</a>
+            </p>
+            <p>
+                <strong>Réseaux sociaux :</strong> Retrouvez-nous sur les principales plateformes 
+                pour suivre l'actualité en temps réel.
+            </p>
         </section>
-        <div>
-            <nav class="pagination" aria-label="Navigation de l'agenda">
-                <a href="#" class="page-link">Préc.</a>
-                <a href="#" class="page-link active">1</a>
-                <a href="#" class="page-link ">2</a>
-                <a href="#" class="page-link ">3</a>
-                <a href="#" class="page-link">Suiv.</a>
-            </nav>
-        </div>
-        <section class="newsletter">
+
+        <!-- <section class="newsletter">
             <h2>Recevoir la newsletter</h2>
             <p>
                 Chaque semaine, l’essentiel de l’actualité locale,
                 l’agenda et les initiatives citoyennes.
             </p>
             <a href="contact.html">Je m’inscris</a>
-        </section>
+        </section> -->
 
     </main>
 
