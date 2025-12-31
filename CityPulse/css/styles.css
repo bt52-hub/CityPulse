@@ -125,7 +125,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.6rem;
+    padding: 1rem;
     font-size: 1.4rem;
     border-radius: 32px;
     border: 1px solid transparent;
@@ -789,14 +789,16 @@ RESPONSIVE DESIGN
         margin: 0 auto;
         padding: 3.2rem 2.4rem;
     }
-    .main-nav {
-        flex-wrap: nowrap;
-    }
 
     .nav-list {
         display: flex;
-        gap: 2.4rem;
+        gap: 8rem;
         font-size: 1.4rem;
+        list-style: none;
+
+        a {
+            font-size: 2rem;
+        }
     }
 
     .btn-secondary {
@@ -806,7 +808,6 @@ RESPONSIVE DESIGN
     .featured-article article {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        align-items: stretch;
     }
 
     .featured-article .article-image img {

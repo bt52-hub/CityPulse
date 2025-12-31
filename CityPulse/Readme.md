@@ -6,8 +6,8 @@ CityPulse : état d'avancement + choix
 - [ X ] Les 5 pages sont accessibles via la navigation
 - [ X ] Aucun JavaScript, aucun framework, aucun style inline
 - [ X ] Aucun “Lorem ipsum” (contenu réaliste partout)
-- [ ] Mobile et bureau conformes à la maquette
-- [ ] Navigation clavier utilisable sur toutes les pages
+- [ X ] Mobile uniquement // conforme à la maquette
+- [ X ] Navigation clavier utilisable sur toutes les pages
 - [ ] Focus visible partout
 - [ ] Thème sombre fonctionnel
 - [ ] Réduction des animations respectée (si applicable)
@@ -60,4 +60,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > création des pages "article", "contact" : html + css
-> mise en place du menu pour la navigation
+> mise en place du menu ouvert pour la navigation version mobile
+> mise en place du menu fixe pour la version desktop
+> corrections et ajustements diverses sur le css
+> "début" de mise en place de la partie responsive
