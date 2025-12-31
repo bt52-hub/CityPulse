@@ -27,7 +27,7 @@ Indiquez ici :
 -- Les différentes étapes de mon projet : --
 
 
-::: 29.12.2025 - AM + P.M
+::: 29.12.2025 - AM + PM
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > mise en place de la structure HTML "générale" : header + footer
@@ -48,7 +48,7 @@ Le header et le footer seront dupliqués sur chaque page du site créée pour re
 
 
 
-::: 30.12.2025 - AM + P.M
+::: 30.12.2025 - AM + PM
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > Retouches, compléments et corrections du css sur la page d'accueil
@@ -56,7 +56,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 
 
-::: 31.12.2025 - AM
+::: 31.12.2025 - AM + PM
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > création des pages "article", "contact" : html + css

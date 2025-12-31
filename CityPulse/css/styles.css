@@ -103,9 +103,8 @@ a {
   top: 100%;
   left: 70%;
   right: 0;
-  background: #ffffffce;
+  background: #ffffff;
   padding: 2rem;
-  border-bottom: 1px solid #eaeaea;
 
   li {
     list-style: none;
@@ -115,9 +114,7 @@ a {
     border-radius: 2rem;
     margin: 0.5rem;
     padding: 1rem;
-    max-width: 160px;
     text-align: center;
-
   }
 }
 
@@ -635,6 +632,7 @@ margin-left: 1.5rem;
 }
 
 /* FORMULAIRE */
+
 .contact-form-section {
     background-color: var(--color-background);
     border: 1px solid #e6e6e6;
@@ -837,4 +835,15 @@ RESPONSIVE DESIGN
         margin-bottom: 0;
     }
 
+    .footer-content {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.2rem;
+        margin: 2rem;
+    }
 
+    .footer-bottom {
+        text-align: center;
+        margin-top: 2.4rem;
+    }
