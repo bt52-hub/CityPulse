@@ -9,7 +9,7 @@ CityPulse : état d'avancement + choix
 - [ ] Mobile et bureau conformes à la maquette
 - [ ] Navigation clavier utilisable sur toutes les pages
 - [ ] Focus visible partout
-- [ X ] Thème sombre fonctionnel
+- [ ] Thème sombre fonctionnel
 - [ ] Réduction des animations respectée (si applicable)
 - [ X ] Projet organisé + ressources rangées
 - [ X ] README complété (état d’avancement + choix)
@@ -18,7 +18,7 @@ CityPulse : état d'avancement + choix
 
 ## Notes
 Indiquez ici :
-- ce qui a été le plus difficile : penser au responsive, travailler le css avec des variables
+- ce qui a été le plus difficile : penser le responsive, travailler le css avec des variables
 - ce que vous amélioreriez avec plus de temps : la réflexion à avoir sur la construction du site internet avant de coder
 - ce que vous avez priorisé : le rendu et la navigation
 
@@ -60,3 +60,4 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 > création des pages "article", "contact" : html + css
+> mise en place du menu pour la navigation
